@@ -1,0 +1,206 @@
+<!Doctype html>
+<html>
+    <head>
+        <title></title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <style type="text/css">
+            #navbar
+{
+    background-color:#cdc1ff;
+    padding:15px 25px;
+    font-weight:600;
+    font-size:1.1 rem;
+    font-family: 'Raleway', sans-serif;
+    position:sticky;
+    top:0px;
+    z-index:1;
+
+}
+#searchbar
+{
+    font-size:1.1 rem;
+    font-family: 'Raleway', sans-serif;
+}
+#searchbutton
+{
+    background-color:#0077b6;
+    color:#fff;
+}
+ 
+            h1{
+                font-size:1.8rem;
+                font-family: 'Ysabeau Office', sans-serif;
+            }
+.head
+{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    width:100%;
+}
+.Form
+{
+    background-color:#fff;
+    margin-top:50px;
+}
+.container
+{
+    display:flex;
+    justify-content:space-around;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width:700px;
+    
+    
+}
+.form
+{
+    display:flex;
+    justify-content:space-around;
+    flex-direction:column;
+    width:60%;
+    margin:20px;
+}
+.image>img
+{
+    width:400px;
+    height:400px;
+}
+button
+{
+    height:40px;
+    width:150px;
+    color:#fff;
+    background-color:#dc2f02;
+    font-size:1.3rem;
+    border:none;
+    border-radius:5px;
+    margin-top:10px;
+    font-family: 'Ysabeau Office', sans-serif;
+}
+input[type="text"]
+{
+    width:90%;
+    box-sizing:border-box;
+    border:2px solid grey;
+    border-width:0px 0px 2px 0px;
+    margin-bottom:10px;
+    font-family: 'Ysabeau Office', sans-serif;
+    font-size:1.2rem;
+}
+input[type="text"]:focus{
+    outline:none;
+    border-image:linear-gradient(to right,#DEAFDB 0%,#EFB9AD 100%) 1;
+    border-width:0px 0px 2px 0px;
+
+}
+
+button:hover
+{
+    cursor:pointer;
+    background-color:#6a994e;
+}
+::placeholder{
+    font-size:1.2rem;
+    font-family: 'Ysabeau Office', sans-serif;
+}
+span{
+    font-family: 'Ysabeau Office', sans-serif; 
+    
+}
+.label
+{
+    font-family: 'Ysabeau Office', sans-serif;  
+}
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:ital@1&display=swap" rel="stylesheet">
+    </head>
+</html>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-warning" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="https://d2g9wbak88g7ch.cloudfront.net/staticimages/logo-new.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/newarrivals">New Arrivals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/boxsets">Box Sets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/bestsellers">Best Sellers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/fictionbooks">Fiction Books</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/awardwinners">Award Winners</a>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/signup">Sign Up</a>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login">Login</a>
+                </a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchbar">
+              <button class="btn btn-outline-success" type="submit" id="searchbutton">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      
+    
+<div class="head">
+    <div class="Form">
+     <div class="container">
+     <div class="image">
+    
+         <img src="	https://img.freepik.com/free-vector/access-control-system-abstract-concept_335657-3180.jpg?w=360" ></img>
+         
+     </div>
+     
+     <div  class="form">
+         <h1>Login</h1>
+         <form action="/validate" method="post">
+         <div class="username">
+         <input type="text" name="loginusername" placeholder="Username" ></input>
+         </div>
+         
+         <div class="password">
+         <input type="text" name="loginpassword" placeholder="Passsword"></input>
+         </div>
+         
+         <div class="label">
+         <input type="checkbox"
+                        class="custom-control-input"></input>
+                     <label class="custom-control-label">Remember me</label>
+                    </div>
+         
+         <div class="button">
+         <button  onclick=Login()>Login</button>
+         </div>
+</form>
+     </div>
+    
+     </div>
+     </div>
+  </div>
+  </body>
+
+  </html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online book store</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+<style type="text/css">
+  #navbar
+{
+    background-color:#cdc1ff;
+    padding:15px 25px;
+    font-weight:600;
+    font-size:1.1 rem;
+    font-family: 'Raleway', sans-serif;
+    position:sticky;
+    top:0px;
+    z-index:1;
+}
+#searchbar
+{
+    font-size:1.1 rem;
+    font-family: 'Raleway', sans-serif;
+}
+#searchbutton
+{
+    background-color:#0077b6;
+    color:#fff;
+}
+
+.bookimage
+{
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+}
+.image{
+width:50%;
+padding:30px;
+}
+.image>img{
+  width:100%;
+
+}
+h3{
+  text-align:center;
+  font-family: 'Sail', cursive;
+  padding:20px;
+  color:#220901;
+}
+.head
+{
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+}
+.content
+{
+  width:40%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   padding:20px;
+  transition:1s;
+  transform:scale(1);
+  margin:20px;
+  background-color:#cdedf6;
+}
+.content:hover{
+  transform:scale(1.05);
+}
+h5{
+  font-family: 'Sail', cursive;
+  text-align:center;
+  color:#220901;
+  font-weight:bold;
+}
+p{
+  font-family: 'Courgette', cursive;
+  font-size:1rem;
+}
+</style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-warning" id="navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="https://d2g9wbak88g7ch.cloudfront.net/staticimages/logo-new.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/newarrivals">New Arrivals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/boxsets">Box Sets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/bestsellers">Best Sellers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/fictionbooks">Fiction Books</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/awardwinners">Award Winners</a>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/signup">Sign Up</a>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/login">Login</a>
+          </a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchbar">
+        <button class="btn btn-outline-success" type="submit" id="searchbutton">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://www.bookswagon.com/bannerimages/84_inr.jpg?v=1.6" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item ">
+      <img src="https://www.bookswagon.com/bannerimages/86_inr.jpg?v=2.2" class="d-block w-100" alt="...">
+    </div>
+   
+    <div class="carousel-item">
+      <img src="https://www.bookswagon.com/bannerimages/79_inr.jpg?v=1.9" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.bookswagon.com/bannerimages/85_inr.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<h3>Book Features</h3>
+<div class="bookimage">
+  <div class="image">
+    <img src="https://www.bookswagon.com/bannerimages/80_inr.jpg?v=1.8">
+  </div>
+  <div class="image">
+    <img src="https://www.bookswagon.com/bannerimages/83_inr.jpg?v=1.9">
+  </div>
+  <div class="image">
+    <img src="https://www.bookswagon.com/bannerimages/81_inr.jpg?v=1.9">
+  </div>
+</div>
+<h3>Featured Authors</h3>
+<div class="head">
+  
+  <div class="content">
+    <h5>Arundhathi Roy</h5>
+    <p>Arundhati Roy is an Indian writer, best known for her book The God of Small Things (1997), which won the Man Booker Prize for Fiction in 1997. She was born in Shillong, Meghalaya, India. Her parents were Rajib Roy, a Bengali Hindu tea plantation  anager from Calcutta and Mary Roy, a Malayali Syrian Christian women's rights activist from Kerala. 
+
+    </p>
+       
+  </div>
+  <div class="content">
+    <h5>William Wordsworth</h5>
+    <p>On April 7, 1770, William Wordsworth was conceived in Cockermouth, Cumbria, England. Wordsworth's mom kicked the bucket when he was eight—this experience shapes a lot of his later work. Wordsworth went to Hawkshead Grammar School, where his adoraton for verse was solidly settled and, it is trusted, he made his initially endeavors at verse. 
+      
+    </p>
+       
+  </div>
+  <div class="content">
+    <h5>Stephen King</h5>
+    <p>At the point when Stephen was eleven, his mom took her youngsters back to Durham, Maine, for good.While living in Chicago for several years, he worked for the book review journal Booklist as a publishing assistant and production editor. Along with this, he was also writing his first book, Looking for Alaska.
+
+
+    </p>
+       
+  </div>
+  <div class="content">
+    <h5>John Green</h5>
+    <p>John Michael Green is the author of Looking for Alaska, An Abundance of Katherines, Paper Towns, and The Fault in Our Stars. He is an American author, vlogger, writer, producer, actor and editor. He was born in Indianapolis, Indiana on august 24,1977. John grew up in Orlando, Florida. Then he attended Indian Springs School and then Kenyon College. 
+      
+    </p>
+       
+  </div>
+  <div class="content">
+    <h5>Gayle Foreman</h5>
+    <p>Gayle Forman is an American young adult fiction author. She was born in June 5, 1978 in in Los Angeles. Her best known novel is If I Stay which topped the New York bestseller list for young adult fiction category. It was later made into a film to. Forman began her career with writing for Seventeen Magazine
+       
+
+    </p>
+       
+  </div>
+  <div class="content">
+    <h5>Erich Segal</h5>
+    <p>An American author, screenwriter, and educator Erich Wolf Segal (16 June, 1937- 17 January, 2010) shot to fame as the author of Love Story . The tragic novel was later adapted into a motion picture which was also a major hit. Son of a teaher, Segal attended Midwood High School in Brooklyn, USA.
+      
+
+    </p>
+       
+  </div>
+</div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+
+    </body>
+</html>
